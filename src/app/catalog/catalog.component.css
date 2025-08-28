@@ -9,8 +9,9 @@
   padding: 25px 200px;
 }
 
-.filters button {
+.filters .button {
   width: 100px;
+  color: palevioletred;
 }
 
 .products {
