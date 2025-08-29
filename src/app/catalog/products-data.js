@@ -1,17 +1,4 @@
-import { Component } from '@angular/core';
-import { IProduct } from './product.model';
-
-@Component({
-  selector: 'bot-catalog',
-  templateUrl: './catalog.component.html',
-  styleUrls: ['./catalog.component.css']
-})
-export class CatalogComponent {
-  public products: IProduct[];
-  public filter: string = '';
-
-  constructor() {
-    this.products = [
+let products = [
   {
     id: 1,
     description:
@@ -186,15 +173,3 @@ export class CatalogComponent {
     discount: 0,
   },
 ];
-
-  }
-  getImageUrl(product: IProduct) {
-    return '/assets/images/robot-parts/' + product.imageName;
-  }
-
-  getFilteredProducts() {
-    return this.filter === ''
-    ? this.products
-    : this.products.filter((product) => product.category === this.filter);
-  }
-}

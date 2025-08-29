@@ -9,9 +9,8 @@
   padding: 25px 200px;
 }
 
-.filters .button {
+.filters button {
   width: 100px;
-  color: palevioletred;
 }
 
 .products {
@@ -73,4 +72,9 @@
 .product .price button {
   padding: 10px;
   width: 100px;
+}
+
+.discount {
+  margin-top: -15px;
+  color: #d25ca1;
 }
